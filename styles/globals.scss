@@ -1,0 +1,208 @@
+$primary-color: #a72121;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif !important;
+}
+
+.nav_wrapper {
+  .nav_wrapper_inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    h1 {
+      a {
+        color: $primary-color;
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 66px;
+        text-decoration: none;
+      }
+    }
+  }
+  .menus {
+    .main_menus {
+      display: flex;
+      ul {
+        display: flex;
+        li {
+          padding: 0 25px;
+          a {
+            text-decoration: none;
+            color: #371010;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            line-height: 66px;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 2px;
+            transition: all 2s;
+            &:hover {
+              border-bottom: 3px solid #9b0000;
+            }
+          }
+          .active {
+            color: #c22020;
+          }
+        }
+      }
+      .nav_right {
+        position: relative;
+        img {
+          width: 113%;
+          height: 390px;
+        }
+        .nav_icon {
+          position: absolute;
+          top: 21px;
+          right: 15px;
+          svg {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner_wrapper {
+  margin-top: -229px;
+  .banner_text {
+    width: 570px;
+    .text_main {
+      font-size: 56px;
+      color: #461010;
+      font-weight: 700;
+      line-height: 66px;
+      span {
+        color: #c22020;
+      }
+    }
+    .sub {
+      margin-top: 40px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      color: #000000;
+    }
+    .cta {
+      display: flex;
+      align-items: center;
+      margin-top: 64px;
+      margin-bottom: 71px;
+      button {
+        background-color: $primary-color;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: white;
+        width: 166px;
+        height: 64px;
+        margin-right: 40px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      .previous {
+        text-decoration: line-through;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        color: $primary-color;
+        margin-right: 13px;
+      }
+      .current {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: $primary-color;
+        margin-right: 34px;
+      }
+      a {
+        img {
+          margin-right: 10px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #2c0c0c;
+        }
+      }
+    }
+  }
+}
+.item_showcase {
+  margin-bottom: 32px;
+  .single_item_wrapper {
+    border: 1px solid #000000;
+    border-radius: 40px;
+    width: 278px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 40px;
+    .price {
+      display: flex;
+      justify-content: flex-end;
+      p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #ba1717;
+      }
+    }
+    .details {
+      text-align: center;
+      .title {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 28px;
+        color: #2d1212;
+        margin-bottom: 0;
+      }
+      .quantity {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #2d1212;
+        margin-bottom: 26px;
+      }
+      button {
+        width: 95px;
+        height: 36px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000000;
+        border: 1px solid #000000;
+        background-color: white;
+      }
+    }
+    .image_section {
+      width: 124px;
+      height: 124px;
+      background-color: #d9d9d9;
+      border-radius: 50%;
+
+      position: absolute;
+      top: -26px;
+      left: -42px;
+      text-align: center;
+      line-height: 124px;
+      img {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.auth_wrapper {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
